@@ -1,0 +1,15 @@
+---
+name: Money Fox
+desc: A way to make budgeting easy. A basic idea for the community, made even better by the community.
+site: https://github.com/MoneyFox/MoneyFox
+tags:
+- ".net"
+- c#
+- uwp
+upforgrabs:
+  name: up-for-grabs
+  link: https://github.com/MoneyFox/MoneyFox/labels/up-for-grabs
+stats:
+  issue-count: 12
+  last-updated: '2023-04-12T21:33:41Z'
+  fork-count: 137
