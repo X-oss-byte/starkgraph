@@ -1,6 +1,6 @@
 main:  build
 import: start build from import (make new more efficient and flexible)
-    types: [opened, synchronize]
+
 
 name: Review
 jobs:
