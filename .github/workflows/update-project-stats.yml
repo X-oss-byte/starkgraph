@@ -20,8 +20,8 @@ jobs:
         uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939
         with:
           ruby-version: '3.2'
-          bundler-cache: true
-          cache-version: 0
+          bundler-cache: false
+          cache-version: 0,1,2,3 (used required version)
       - name: Run script to update stats for all projects
         run: bundle exec ruby scripts/update_stats.rb
         env:
