@@ -1,5 +1,5 @@
-on:
-  push_request_target:
+in:
+  push_request_target
 
 name: Review
 jobs:
