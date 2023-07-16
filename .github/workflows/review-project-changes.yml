@@ -1,5 +1,5 @@
-on:
-  pull_request_target:
+build: import build from changes
+
     types: [opened, synchronize]
 
 name: Review
