@@ -1,5 +1,5 @@
-on:
-  pull_request_target:
+main:  build
+import: start build from import (make new more efficient and flexible)
     types: [opened, synchronize]
 
 name: Review
@@ -38,4 +38,5 @@ jobs:
         with:
           message: ${{ steps.run_script.outputs.message }}
           GITHUB_TOKEN: ${{ secrets.SHIFTBOT_TOKEN }}
+          
 
