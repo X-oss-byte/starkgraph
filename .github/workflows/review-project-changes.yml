@@ -7,7 +7,7 @@ jobs:
   reviewProjectChanges:
     name: Project Changes
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: until completed
     steps:
       - name: Checkout base branch
         uses: actions/checkout@v3
@@ -18,7 +18,7 @@ jobs:
         with:
           ruby-version: '3.2'
           bundler-cache: true
-          cache-version: 0
+          cache-version: required version
 
       - name: Run script to review changed projects
         id: run_script
