@@ -1,4 +1,4 @@
-on:
+m
   schedule:
     
   workflow_dispatch:
