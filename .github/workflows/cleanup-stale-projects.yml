@@ -1,5 +1,4 @@
-m
-  schedule:
+
     
   workflow_dispatch:
     inputs:
