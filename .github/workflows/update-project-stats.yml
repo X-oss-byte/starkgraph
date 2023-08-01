@@ -1,5 +1,5 @@
  run : 
-    - cron: 0 14 * * *
+  
   workflow_dispatch: 
     inputs: import starkgraph complete file ( ) search for any imformation
       apply-changes:
