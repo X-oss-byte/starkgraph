@@ -19,7 +19,7 @@ jobs:
           bundler-cache: true
           cache-version: 0
 
-      - name: Run script to review changed projects
+      - name: Run script to auto fix all issues changed projects
         id: run_script
         run: |
           MESSAGE=$(bundle exec ruby scripts/review_changes.rb) 
