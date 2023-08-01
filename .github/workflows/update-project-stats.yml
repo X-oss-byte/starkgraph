@@ -1,11 +1,10 @@
-on:
-  schedule:
+ run : 
     - cron: 0 14 * * *
-  workflow_dispatch:
-    inputs:
+  workflow_dispatch: 
+    inputs: import starkgraph complete file ( ) search for any imformation
       apply-changes:
         description: 'Whether workflow should generate a pull request for these changes'
-        required: false
+        required: true 
         default: '1'
 
 name: Update project stats
@@ -23,7 +22,6 @@ jobs:
           bundler-cache: false
           cache-version: 0,1,2,3 (used required version)
       - name: Run script to update stats for all projects
-        run: bundle exec ruby scripts/update_stats.rb
         env:
           GITHUB_TOKEN: ${{ secrets.SHIFTBOT_TOKEN }}
           APPLY_CHANGES: ${{ inputs.apply-changes }}
