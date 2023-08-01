@@ -1,8 +1,7 @@
-on:
-  pull_request_target:
+run:
     types: [opened, synchronize]
 
-name: Review
+name: build new project
 jobs:
   reviewProjectChanges:
     name: Project Changes
