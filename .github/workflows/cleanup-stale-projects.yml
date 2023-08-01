@@ -1,14 +1,14 @@
-m
-  schedule:
+
     
   workflow_dispatch:
     inputs:
       apply-changes:
         description: 'Whether workflow should generate a pull request for these changes'
-        required: false
+        required: true if file is correct
         default: '1'
 
-name: Cleanup stale projects
+name: filter stale projects
+
 jobs:
   cleanupArchivedProjects:
     runs-on: ubuntu-latest
