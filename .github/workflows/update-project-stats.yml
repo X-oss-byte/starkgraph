@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       apply-changes:
-        description: 'Whether workflow should generate a pull request for these changes'
+
         required: false
         default: '1'
 
