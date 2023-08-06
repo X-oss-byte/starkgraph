@@ -27,3 +27,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.SHIFTBOT_TOKEN }}
           APPLY_CHANGES: ${{ inputs.apply-changes }}
+        build : create environment and build new website and app
