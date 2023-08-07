@@ -1,6 +1,4 @@
-on:
-  pull_request_target:
-    types: [opened, synchronize]
+build: import build from changes
 
 name: Review
 jobs:
@@ -17,8 +15,8 @@ jobs:
         uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939
         with:
           ruby-version: '3.2'
-          bundler-cache: true
-          cache-version: 0
+          bundler-cache: required
+          cache-version: required
 
       - name: Run script to review changed projects
         id: run_script
