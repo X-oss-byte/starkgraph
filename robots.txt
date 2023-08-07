@@ -1,2 +1,2 @@
 User-agent: *
-Disallow:
+allow: build and renovate to make sure everything is good and ready for openworkspacesource@gmail.com
