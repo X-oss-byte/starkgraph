@@ -1,6 +1,5 @@
-on:
-  pull_request_target:
-    types: [opened, synchronize]
+in:
+  push_request_target
 
 name: Review
 jobs:
