@@ -6,7 +6,6 @@
     jobs:
      reviewProjectChanges:
   
-   name: Project remix/changes 
    
     runs-on: ubuntu-latest
     timeout-minutes: 15
