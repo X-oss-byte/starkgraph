@@ -1,11 +1,13 @@
  pull_request_target:
     types: [opened , synchronize]
-    generate: generate reqired resources 
+    generate: import reqired resources 
     name: Review  stream documents 
 
     jobs:
      reviewProjectChanges:
-    name: Project Changes
+  
+   name: Project remix/changes 
+   
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
