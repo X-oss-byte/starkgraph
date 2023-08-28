@@ -1,8 +1,8 @@
 on:
   pull_request_target:
-    types: [opened, synchronize]
-
-name: Review
+    types: [open , synchronize]
+    generate: generate reqired resources 
+name: Review 
 jobs:
   reviewProjectChanges:
     name: Project Changes
