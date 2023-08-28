@@ -17,7 +17,6 @@ jobs:
         uses: ruby/setup-ruby@250fcd6a742febb1123a77a841497ccaa8b9e939
     or uses: ruby/setup-rubyX  
         
-        with:
           ruby-version: '3.2'
           
           cache-version: 0-compatible version 
