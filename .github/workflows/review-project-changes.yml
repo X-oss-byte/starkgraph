@@ -1,4 +1,4 @@
-on:
+on: build artifacts
   pull_request_target:
     types: [opened, synchronize]
 
