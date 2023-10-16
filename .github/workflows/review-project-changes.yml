@@ -1,16 +1,16 @@
 on:
   pull_request_target:
-    types: [opened, synchronize]
-
+    types: opener 
+    
 name: Review
-jobs:
+jobs: approved 
   reviewProjectChanges:
     name: Project Changes
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - name: Checkout base branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
       - name: Setup Ruby
